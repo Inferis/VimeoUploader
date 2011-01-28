@@ -1,0 +1,207 @@
+TVimeoUploader
+v7
+r0
+t317938413.808250
+cCheck dependencies
+cProcessInfoPlistFile /Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app/Info.plist VimeoUploader-Info.plist
+cCompileXIB /Users/tom/Projects/VimeoUploader/MainWindow.xib
+cProcessPCH /var/folders/Nx/NxHKGF7+HnOO2SkzFAjCRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/VimeoUploader_Prefix-dmgglqjfcaxkgyfnvuuqxescgmmy/VimeoUploader_Prefix.pch.gch VimeoUploader_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/Objects-normal/i386/main.o /Users/tom/Projects/VimeoUploader/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/Objects-normal/i386/VimeoUploaderAppDelegate.o /Users/tom/Projects/VimeoUploader/Classes/VimeoUploaderAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app/VimeoUploader normal i386
+cGenerateDSYMFile /Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app.dSYM /Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app/VimeoUploader
+cTouch /Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004D3603B60000000000000110
+t1295385526
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC12246000000000029B310
+t1287725638
+s2732816
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC1281F0000000000000AA1
+t1287727135
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC12883000000000074D7B0
+t1287727235
+s7657392
+
+N/Users/tom/Projects/VimeoUploader/Classes/VimeoUploaderAppDelegate.h
+c000000004D432369000000000000015C
+t1296245609
+s348
+i<UIKit/UIKit.h>
+
+N/Users/tom/Projects/VimeoUploader/Classes/VimeoUploaderAppDelegate.m
+c000000004D43236900000000000009E9
+t1296245609
+s2537
+i"VimeoUploaderAppDelegate.h"
+
+N/Users/tom/Projects/VimeoUploader/MainWindow.xib
+c000000004D4323690000000000002126
+t1296245609
+s8486
+
+N/Users/tom/Projects/VimeoUploader/VimeoUploader_Prefix.pch
+c000000004D43236900000000000000C3
+t1296245609
+s195
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app
+t1296245613
+s204
+
+N/Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app.dSYM
+t1296245613
+s102
+
+N/Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app/Info.plist
+t1296245612
+s615
+
+N/Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app/MainWindow.nib
+t1296245612
+s990
+
+N/Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app/PkgInfo
+t1296245612
+s8
+
+N/Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app/VimeoUploader
+t1296245613
+s15792
+
+N/Users/tom/Projects/VimeoUploader/build/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/Objects-normal/i386/VimeoUploader.LinkFileList
+c000000004D43236C0000000000000116
+t1296245612
+s278
+
+N/Users/tom/Projects/VimeoUploader/build/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/Objects-normal/i386/VimeoUploaderAppDelegate.o
+t1296245613
+s49564
+
+N/Users/tom/Projects/VimeoUploader/build/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/Objects-normal/i386/main.o
+t1296245613
+s6292
+
+N/Users/tom/Projects/VimeoUploader/main.m
+c000000004D4323690000000000000172
+t1296245609
+s370
+i<UIKit/UIKit.h>
+
+N/var/folders/Nx/NxHKGF7+HnOO2SkzFAjCRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/VimeoUploader_Prefix-dmgglqjfcaxkgyfnvuuqxescgmmy/VimeoUploader_Prefix.pch.gch
+t1296245613
+s15453392
+
+NVimeoUploader-Info.plist
+c000000004D432369000000000000038D
+t1296245609
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies317938412#317938412#0(0"0(0#1#0"8609957856#0"0#
+
+CCompileC build/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/Objects-normal/i386/VimeoUploaderAppDelegate.o /Users/tom/Projects/VimeoUploader/Classes/VimeoUploaderAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s317938413.649076
+e317938413.748589
+r1
+xCompileC
+xbuild/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/Objects-normal/i386/VimeoUploaderAppDelegate.o
+x/Users/tom/Projects/VimeoUploader/Classes/VimeoUploaderAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/tom/Projects/VimeoUploader/Classes/VimeoUploaderAppDelegate.m317938413#317938413#0(0"0(0#0#68"/Users/tom/Projects/VimeoUploader/Classes/VimeoUploaderAppDelegate.m8601924576#2027"    cd /Users/tom/Projects/VimeoUploader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/tom/Projects/VimeoUploader/build/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/VimeoUploader-generated-files.hmap -I/Users/tom/Projects/VimeoUploader/build/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/VimeoUploader-own-target-headers.hmap -I/Users/tom/Projects/VimeoUploader/build/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/VimeoUploader-all-target-headers.hmap -iquote /Users/tom/Projects/VimeoUploader/build/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/VimeoUploader-project-headers.hmap -F/Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator -I/Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/include -I/Users/tom/Projects/VimeoUploader/build/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/DerivedSources/i386 -I/Users/tom/Projects/VimeoUploader/build/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/DerivedSources -include /var/folders/Nx/NxHKGF7+HnOO2SkzFAjCRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/VimeoUploader_Prefix-dmgglqjfcaxkgyfnvuuqxescgmmy/VimeoUploader_Prefix.pch -c /Users/tom/Projects/VimeoUploader/Classes/VimeoUploaderAppDelegate.m -o /Users/tom/Projects/VimeoUploader/build/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/Objects-normal/i386/VimeoUploaderAppDelegate.o0#
+
+CCompileC build/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/Objects-normal/i386/main.o /Users/tom/Projects/VimeoUploader/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s317938413.648081
+e317938413.734534
+r1
+xCompileC
+xbuild/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/Objects-normal/i386/main.o
+x/Users/tom/Projects/VimeoUploader/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@48"Compile /Users/tom/Projects/VimeoUploader/main.m317938413#317938413#0(0"0(0#0#40"/Users/tom/Projects/VimeoUploader/main.m8611925440#1979"    cd /Users/tom/Projects/VimeoUploader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/tom/Projects/VimeoUploader/build/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/VimeoUploader-generated-files.hmap -I/Users/tom/Projects/VimeoUploader/build/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/VimeoUploader-own-target-headers.hmap -I/Users/tom/Projects/VimeoUploader/build/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/VimeoUploader-all-target-headers.hmap -iquote /Users/tom/Projects/VimeoUploader/build/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/VimeoUploader-project-headers.hmap -F/Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator -I/Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/include -I/Users/tom/Projects/VimeoUploader/build/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/DerivedSources/i386 -I/Users/tom/Projects/VimeoUploader/build/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/DerivedSources -include /var/folders/Nx/NxHKGF7+HnOO2SkzFAjCRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/VimeoUploader_Prefix-dmgglqjfcaxkgyfnvuuqxescgmmy/VimeoUploader_Prefix.pch -c /Users/tom/Projects/VimeoUploader/main.m -o /Users/tom/Projects/VimeoUploader/build/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/tom/Projects/VimeoUploader/MainWindow.xib
+s317938412.344158
+e317938412.768841
+r1
+xCompileXIB
+x/Users/tom/Projects/VimeoUploader/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib317938412#317938412#0(0"0(0#0#48"/Users/tom/Projects/VimeoUploader/MainWindow.xib8610541888#561"    cd /Users/tom/Projects/VimeoUploader    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app/MainWindow.nib /Users/tom/Projects/VimeoUploader/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CGenerateDSYMFile /Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app.dSYM /Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app/VimeoUploader
+s317938413.782317
+e317938413.804676
+r1
+xGenerateDSYMFile
+x/Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app.dSYM
+x/Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app/VimeoUploader
+lSLF07#2@127"GenerateDSYMFile build/Debug-iphonesimulator/VimeoUploader.app.dSYM build/Debug-iphonesimulator/VimeoUploader.app/VimeoUploader317938413#317938413#0(0"0(0#0#93"/Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app/VimeoUploader8611729536#386"    cd /Users/tom/Projects/VimeoUploader    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app/VimeoUploader -o /Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app.dSYM0#
+
+CLd /Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app/VimeoUploader normal i386
+s317938413.748685
+e317938413.782216
+r1
+xLd
+x/Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app/VimeoUploader
+xnormal
+xi386
+lSLF07#2@98"Link /Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app/VimeoUploader317938413#317938413#0(0"0(0#0#0"8612497984#905"    cd /Users/tom/Projects/VimeoUploader    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator -F/Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator -filelist /Users/tom/Projects/VimeoUploader/build/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/Objects-normal/i386/VimeoUploader.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app/VimeoUploader0#
+
+CProcessInfoPlistFile /Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app/Info.plist VimeoUploader-Info.plist
+s317938412.341144
+e317938412.344081
+r1
+xProcessInfoPlistFile
+x/Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app/Info.plist
+xVimeoUploader-Info.plist
+lSLF07#2@32"Process VimeoUploader-Info.plist317938412#317938412#0(0"0(0#0#58"/Users/tom/Projects/VimeoUploader/VimeoUploader-Info.plist8614254624#482"    cd /Users/tom/Projects/VimeoUploader    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility VimeoUploader-Info.plist -genpkginfo /Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app/Info.plist0#
+
+CProcessPCH /var/folders/Nx/NxHKGF7+HnOO2SkzFAjCRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/VimeoUploader_Prefix-dmgglqjfcaxkgyfnvuuqxescgmmy/VimeoUploader_Prefix.pch.gch VimeoUploader_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s317938412.768964
+e317938413.647983
+r1
+xProcessPCH
+x/var/folders/Nx/NxHKGF7+HnOO2SkzFAjCRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/VimeoUploader_Prefix-dmgglqjfcaxkgyfnvuuqxescgmmy/VimeoUploader_Prefix.pch.gch
+xVimeoUploader_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@35"Precompile VimeoUploader_Prefix.pch317938412#317938413#0(0"0(0#0#58"/Users/tom/Projects/VimeoUploader/VimeoUploader_Prefix.pch8602136416#1870"    cd /Users/tom/Projects/VimeoUploader    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/tom/Projects/VimeoUploader/build/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/VimeoUploader-generated-files.hmap -I/Users/tom/Projects/VimeoUploader/build/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/VimeoUploader-own-target-headers.hmap -I/Users/tom/Projects/VimeoUploader/build/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/VimeoUploader-all-target-headers.hmap -iquote /Users/tom/Projects/VimeoUploader/build/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/VimeoUploader-project-headers.hmap -F/Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator -I/Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/include -I/Users/tom/Projects/VimeoUploader/build/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/DerivedSources/i386 -I/Users/tom/Projects/VimeoUploader/build/VimeoUploader.build/Debug-iphonesimulator/VimeoUploader.build/DerivedSources -c /Users/tom/Projects/VimeoUploader/VimeoUploader_Prefix.pch -o /var/folders/Nx/NxHKGF7+HnOO2SkzFAjCRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/VimeoUploader_Prefix-dmgglqjfcaxkgyfnvuuqxescgmmy/VimeoUploader_Prefix.pch.gch0#
+
+CTouch /Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app
+s317938413.804765
+e317938413.808205
+r1
+xTouch
+x/Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app
+lSLF07#2@85"Touch /Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app317938413#317938413#0(0"0(0#0#0"8611217632#274"    cd /Users/tom/Projects/VimeoUploader    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/tom/Projects/VimeoUploader/build/Debug-iphonesimulator/VimeoUploader.app0#
+
