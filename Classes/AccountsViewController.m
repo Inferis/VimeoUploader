@@ -10,6 +10,7 @@
 #import "VideosViewController.h"
 #import "AccountViewController.h"
 #import "AccountEditorDelegate.h"
+#import "AuthorizeViewController.h"
 
 @interface AccountsViewController () 
 
@@ -176,7 +177,7 @@
 
 
 -(void)openAccount:(Account*)account {
-    AccountViewController *accountViewController = [[AccountViewController alloc] initWithAccount:account nibName:@"AccountView" bundle:nil];
+    AuthorizeViewController *accountViewController = [[AuthorizeViewController alloc] initWithNibName: @"AuthorizeView" bundle:nil];
     [self.navigationController pushViewController:accountViewController animated:YES];
     [accountViewController release];
 }

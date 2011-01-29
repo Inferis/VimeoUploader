@@ -20,3 +20,5 @@
     #import <Foundation/Foundation.h>
     #import <UIKit/UIKit.h>
 #endif
+
+#include "MPDebug.h"
