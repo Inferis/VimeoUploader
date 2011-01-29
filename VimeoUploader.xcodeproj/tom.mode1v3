@@ -202,6 +202,46 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
+				<string>E2C0B72912F38DF70050FB3F</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>Storage.xcdatamodel</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>E2C0B72A12F38DF70050FB3F</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>Storage.xcdatamodel</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>E2C0B72C12F38DF70050FB3F</string>
+						<key>history</key>
+						<array>
+							<string>E2C0B72B12F38DF70050FB3F</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {1091, 681}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>130 196 1091 722 0 0 1680 1028 </string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
 				<string>E2C0B5D312F381660050FB3F</string>
 				<key>PBXProjectModuleLabel</key>
 				<string>LabeledInputTableViewCell.h</string>
@@ -216,7 +256,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>E2C0B71E12F38D7B0050FB3F</string>
+						<string>E2C0B72D12F38DF70050FB3F</string>
 						<key>history</key>
 						<array>
 							<string>E2C0B5B312F380640050FB3F</string>
@@ -270,6 +310,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -319,8 +361,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>21</integer>
-									<integer>10</integer>
+									<integer>9</integer>
+									<integer>7</integer>
 									<integer>6</integer>
 									<integer>0</integer>
 								</array>
@@ -356,14 +398,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>AccountViewController.m</string>
+								<string>Storage.xcdatamodel</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -371,11 +411,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>AccountViewController.m</string>
+										<string>Storage.xcdatamodel</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>E2C0B71D12F38D7B0050FB3F</string>
+										<string>E2C0B72812F38DF70050FB3F</string>
 										<key>history</key>
 										<array>
 											<string>E2C0B49E12F36EE00050FB3F</string>
@@ -392,7 +432,8 @@
 											<string>E2C0B71612F38D6E0050FB3F</string>
 											<string>E2C0B71712F38D6E0050FB3F</string>
 											<string>E2C0B71812F38D6E0050FB3F</string>
-											<string>E2C0B71912F38D6E0050FB3F</string>
+											<string>E2C0B72612F38DF70050FB3F</string>
+											<string>E2C0B72712F38DF70050FB3F</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -597,6 +638,7 @@
 		<string>E2C0B5D312F381660050FB3F</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/tom/Projects/VimeoUploader/VimeoUploader.xcodeproj</string>
+		<string>E2C0B72912F38DF70050FB3F</string>
 	</array>
 	<key>WindowString</key>
 	<string>-2 59 1680 969 0 0 1680 1028 </string>
