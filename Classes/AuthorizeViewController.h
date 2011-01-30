@@ -8,13 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "MPOAuthAPI.h"
+#import "MPOAuthAuthenticationMethodOAuth.h"
 
 
-@interface AuthorizeViewController : UIViewController <UIWebViewDelegate> {
+@interface AuthorizeViewController : UIViewController <UIWebViewDelegate, MPOAuthAuthenticationMethodOAuthDelegate> {
 @private
 	MPOAuthAPI* oauth;
 	IBOutlet UIWebView *webview;
 	NSURL *userAuthURL;
+	NSString *oauthVerifier;
 }
 
 @property (nonatomic, readwrite, retain) NSURL *userAuthURL;

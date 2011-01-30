@@ -10,6 +10,8 @@
 #import "MPOAuthAPI.h"
 #import "MPOAuthAuthenticationMethodOAuth.h"
 #import "MPURLRequestParameter.h"
+#import "EoApplication.h"
+#import <YAJLIOS/YAJLIOS.h>
 
 #define kConsumerKey @"ee2a775091bad1a55dfff24620353fff"
 #define kConsumerSecret @"eb19f48e158271a2"
@@ -49,7 +51,13 @@
 
 - (void)viewDidAppear:(BOOL)animated {
 	[super viewDidAppear:animated];
+	((EoApplication*)[UIApplication sharedApplication]).currentWebView = webview;
 	[self handleAuthentication];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+	[super viewDidDisappear:animated];
+	((EoApplication*)[UIApplication sharedApplication]).currentWebView = nil;
 }
 
 - (void)handleAuthentication {
@@ -62,41 +70,78 @@
 		oauth = [[MPOAuthAPI alloc] initWithCredentials:credentials
 									  authenticationURL:[NSURL URLWithString:@"http://vimeo.com/oauth"]
 											 andBaseURL:[NSURL URLWithString:@"http://vimeo.com/api/rest/v2"]];	
-		((MPOAuthAuthenticationMethodOAuth *)oauth.authenticationMethod).delegate = (id <MPOAuthAuthenticationMethodOAuthDelegate>)UIApplication.sharedApplication.delegate;
+		((MPOAuthAuthenticationMethodOAuth *)oauth.authenticationMethod).delegate = self;
+		//((MPOAuthAuthenticationMethodOAuth *)oauth.authenticationMethod).delegate = (id <MPOAuthAuthenticationMethodOAuthDelegate>)UIApplication.sharedApplication.delegate;
 		[oauth discardCredentials];
+		self.title = @"Authorization";
 	}
 	[oauth authenticate];
 }
 
 - (void)requestTokenReceived:(NSNotification *)inNotification {
-	[self.navigationItem setPrompt:@"Awaiting User Authentication"];
+	self.title = @"Authorization.";
+	DLog(@"Request Token Received");
 }
 
 - (void)accessTokenReceived:(NSNotification *)inNotification {
-	[self.navigationItem setPrompt:@"Access Token Received"];
+	self.title = @"Authorization..";
+	[self.navigationController setNavigationBarHidden:NO animated:YES];
+
+	DLog(@"Access Token Received");
 	
 	NSArray* params = [MPURLRequestParameter parametersFromString:@"format=json&method=vimeo.people.getInfo"];
 	NSData *downloadedData = [oauth dataForMethod:@"" withParameters:params];
 	NSString* result = [[NSString alloc] initWithData:downloadedData encoding:NSUTF8StringEncoding];
 	
-	DLog(@"downloadedData of size - %d", [downloadedData length]);
-	DLog(@"downloadedData:\n%@", result);
+	NSError *error = nil;
+	NSDictionary *response = [result yajl_JSONWithOptions:YAJLParserOptionsAllowComments error:&error];
+	if (error) {
+		/* open an alert with an OK button */
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Fout" 
+														message:error.description
+													   delegate:nil 
+											  cancelButtonTitle:@"OK" 
+											  otherButtonTitles: nil];
+		[alert show];
+		[alert release];
+	} else {
+		DLog(@"response:\n%@", response);
+		DLog(@"name = %@", [[response valueForKey:@"person"] valueForKey:@"display_name"]);
+		[[self navigationController] popViewControllerAnimated:YES];
+	}
 }
 
 #pragma mark -
 #pragma mark Stuff
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
-	// this is a ghetto way to handle this, but it's for when you must use http:// URIs
-	// so that this demo will work correctly, this is an example, DONT.BE.GHETTO
-	NSURL *authURL = [(id <MPOAuthAuthenticationMethodOAuthDelegate>)[UIApplication sharedApplication].delegate callbackURLForCompletedUserAuthorization];
-	if ([request.URL isEqual:authURL]) {
-		[[self navigationController] popViewControllerAnimated:YES];
+	if ([[request.URL host] isEqualToString:@"success"] && [request.URL query].length > 0) {
+		NSDictionary *oauthParameters = [MPURLRequestParameter parameterDictionaryFromString:[request.URL query]];
+		oauthVerifier = [oauthParameters objectForKey:@"oauth_verifier"];
+		[self handleAuthentication];
 		return NO;
 	}
 	
 	return YES;
 }
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+	[self.navigationController setNavigationBarHidden:YES animated:YES];
+}
+
+
+- (NSURL *)callbackURLForCompletedUserAuthorization {
+	return [NSURL URLWithString:@"x-com-eoapp-oauth://success"];
+}
+
+- (BOOL)automaticallyRequestAuthenticationFromURL:(NSURL *)inAuthURL withCallbackURL:(NSURL *)inCallbackURL {
+	return YES;
+}
+
+- (NSString *)oauthVerifierForCompletedUserAuthorization {
+	return oauthVerifier;
+}
+
 
 /*
 // Override to allow orientations other than the default portrait orientation.

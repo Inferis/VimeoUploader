@@ -14,35 +14,6 @@
 
 @synthesize window;
 @synthesize navigationController;
-@synthesize oauthVerifier;
-
-
-#pragma mark -
-#pragma mark OAuth stuff
-
-- (NSURL *)callbackURLForCompletedUserAuthorization {
-	return [NSURL URLWithString:@"x-com-eoapp-oauth://success"];
-}
-
-- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
-	// the url is the callback url with the query string including oauth_token and oauth_verifier in 1.0a
-	if ([[url host] isEqualToString:@"success"] && [url query].length > 0) {
-		NSDictionary *oauthParameters = [MPURLRequestParameter parameterDictionaryFromString:[url query]];
-		oauthVerifier = [oauthParameters objectForKey:@"oauth_verifier"];
-		DLog(@"oauthVerifier = %@", oauthVerifier);
-		DLog(@"self.oauthVerifier = %@", self.oauthVerifier);
-	}
-	
-	return YES;
-}
-
-- (BOOL)automaticallyRequestAuthenticationFromURL:(NSURL *)inAuthURL withCallbackURL:(NSURL *)inCallbackURL {
-	return YES;
-}
-
-- (NSString *)oauthVerifierForCompletedUserAuthorization {
-	return oauthVerifier;
-}
 
 #pragma mark -
 #pragma mark Application lifecycle

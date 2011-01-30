@@ -50,6 +50,9 @@
 		E2C0B7C112F4502F0050FB3F /* AuthorizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C0B7BF12F4502F0050FB3F /* AuthorizeViewController.m */; };
 		E2C0B7C212F4502F0050FB3F /* AuthorizeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2C0B7C012F4502F0050FB3F /* AuthorizeView.xib */; };
 		E2CFAA4912F48259007BC912 /* oauthAutoConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2CFAA4812F48259007BC912 /* oauthAutoConfig.plist */; };
+		E2CFAD4C12F56ED3007BC912 /* EoApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFAD4B12F56ED3007BC912 /* EoApplication.m */; };
+		E2CFAE5212F5A46B007BC912 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFAE4F12F5A46B007BC912 /* Reachability.m */; };
+		E2CFAE5312F5A46B007BC912 /* YAJLIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CFAE5112F5A46B007BC912 /* YAJLIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -129,6 +132,11 @@
 		E2C0B7BF12F4502F0050FB3F /* AuthorizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizeViewController.m; sourceTree = "<group>"; };
 		E2C0B7C012F4502F0050FB3F /* AuthorizeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AuthorizeView.xib; path = Classes/AuthorizeView.xib; sourceTree = "<group>"; };
 		E2CFAA4812F48259007BC912 /* oauthAutoConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = oauthAutoConfig.plist; sourceTree = "<group>"; };
+		E2CFAD4A12F56ED3007BC912 /* EoApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EoApplication.h; sourceTree = "<group>"; };
+		E2CFAD4B12F56ED3007BC912 /* EoApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EoApplication.m; sourceTree = "<group>"; };
+		E2CFAE4E12F5A46B007BC912 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		E2CFAE4F12F5A46B007BC912 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		E2CFAE5112F5A46B007BC912 /* YAJLIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YAJLIOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +152,7 @@
 				E2C0B75212F38E6E0050FB3F /* SystemConfiguration.framework in Frameworks */,
 				E2C0B7A112F44EB90050FB3F /* libxml2.dylib in Frameworks */,
 				E2C0B7BA12F44FE20050FB3F /* Security.framework in Frameworks */,
+				E2CFAE5312F5A46B007BC912 /* YAJLIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +196,8 @@
 			children = (
 				32CA4F630368D1EE00C91783 /* VimeoUploader_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
+				E2CFAD4A12F56ED3007BC912 /* EoApplication.h */,
+				E2CFAD4B12F56ED3007BC912 /* EoApplication.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -248,6 +259,8 @@
 		E2C0B41312F369E80050FB3F /* API */ = {
 			isa = PBXGroup;
 			children = (
+				E2CFAE4D12F5A46B007BC912 /* Reachability */,
+				E2CFAE5012F5A46B007BC912 /* YAJLJSON */,
 				E2C0B75912F44E2F0050FB3F /* OAuth */,
 			);
 			name = API;
@@ -328,6 +341,23 @@
 				E2C0B78512F44E7C0050FB3F /* Base64Transcoder.h */,
 			);
 			path = Crypto;
+			sourceTree = "<group>";
+		};
+		E2CFAE4D12F5A46B007BC912 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				E2CFAE4E12F5A46B007BC912 /* Reachability.h */,
+				E2CFAE4F12F5A46B007BC912 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		E2CFAE5012F5A46B007BC912 /* YAJLJSON */ = {
+			isa = PBXGroup;
+			children = (
+				E2CFAE5112F5A46B007BC912 /* YAJLIOS.framework */,
+			);
+			path = YAJLJSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,6 +454,8 @@
 				E2C0B79812F44E7C0050FB3F /* MPOAuthAPI.m in Sources */,
 				E2C0B79912F44E7C0050FB3F /* Base64Transcoder.c in Sources */,
 				E2C0B7C112F4502F0050FB3F /* AuthorizeViewController.m in Sources */,
+				E2CFAD4C12F56ED3007BC912 /* EoApplication.m in Sources */,
+				E2CFAE5212F5A46B007BC912 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +467,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Classes/YAJLJSON\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -449,6 +485,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Classes/YAJLJSON\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = VimeoUploader_Prefix.pch;
 				INFOPLIST_FILE = "VimeoUploader-Info.plist";
