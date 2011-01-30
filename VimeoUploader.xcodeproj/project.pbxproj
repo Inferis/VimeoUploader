@@ -53,6 +53,10 @@
 		E2CFAD4C12F56ED3007BC912 /* EoApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFAD4B12F56ED3007BC912 /* EoApplication.m */; };
 		E2CFAE5212F5A46B007BC912 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFAE4F12F5A46B007BC912 /* Reachability.m */; };
 		E2CFAE5312F5A46B007BC912 /* YAJLIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CFAE5112F5A46B007BC912 /* YAJLIOS.framework */; };
+		E2CFAEEE12F5D569007BC912 /* _Account.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFAEEA12F5D569007BC912 /* _Account.m */; };
+		E2CFAEEF12F5D569007BC912 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFAEEB12F5D569007BC912 /* Account.m */; };
+		E2CFAEF012F5D569007BC912 /* Storage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2CFAEEC12F5D569007BC912 /* Storage.xcdatamodeld */; };
+		E2CFAEF312F5D5A2007BC912 /* DataConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CFAEF212F5D5A2007BC912 /* DataConnector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,7 +79,6 @@
 		E2C0B44E12F36CB90050FB3F /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
 		E2C0B44F12F36CB90050FB3F /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
 		E2C0B45012F36CB90050FB3F /* AccountView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AccountView.xib; path = Classes/AccountView.xib; sourceTree = "<group>"; };
-		E2C0B4FD12F374B40050FB3F /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
 		E2C0B5AE12F380010050FB3F /* LabeledInputTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabeledInputTableViewCell.h; sourceTree = "<group>"; };
 		E2C0B5AF12F380010050FB3F /* LabeledInputTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabeledInputTableViewCell.m; sourceTree = "<group>"; };
 		E2C0B6EE12F38C680050FB3F /* AccountEditorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountEditorDelegate.h; sourceTree = "<group>"; };
@@ -137,6 +140,13 @@
 		E2CFAE4E12F5A46B007BC912 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		E2CFAE4F12F5A46B007BC912 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		E2CFAE5112F5A46B007BC912 /* YAJLIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YAJLIOS.framework; sourceTree = "<group>"; };
+		E2CFAEE912F5D569007BC912 /* _Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Account.h; sourceTree = "<group>"; };
+		E2CFAEEA12F5D569007BC912 /* _Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Account.m; sourceTree = "<group>"; };
+		E2CFAEEB12F5D569007BC912 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		E2CFAEED12F5D569007BC912 /* Storage.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Storage.xcdatamodel; sourceTree = "<group>"; };
+		E2CFAEF112F5D5A2007BC912 /* DataConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataConnector.h; sourceTree = "<group>"; };
+		E2CFAEF212F5D5A2007BC912 /* DataConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataConnector.m; sourceTree = "<group>"; };
+		E2CFAEFF12F5E863007BC912 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,10 +279,16 @@
 		E2C0B4FC12F374A80050FB3F /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				E2CFAEFF12F5E863007BC912 /* Account.h */,
+				E2CFAEF112F5D5A2007BC912 /* DataConnector.h */,
+				E2CFAEF212F5D5A2007BC912 /* DataConnector.m */,
+				E2CFAEE912F5D569007BC912 /* _Account.h */,
+				E2CFAEEA12F5D569007BC912 /* _Account.m */,
+				E2CFAEEB12F5D569007BC912 /* Account.m */,
+				E2CFAEEC12F5D569007BC912 /* Storage.xcdatamodeld */,
 				E2C0B72E12F38E100050FB3F /* Storage.xcdatamodeld */,
-				E2C0B4FD12F374B40050FB3F /* Account.h */,
 			);
-			name = Data;
+			path = Data;
 			sourceTree = "<group>";
 		};
 		E2C0B5AD12F37FD90050FB3F /* Cells */ = {
@@ -456,6 +472,10 @@
 				E2C0B7C112F4502F0050FB3F /* AuthorizeViewController.m in Sources */,
 				E2CFAD4C12F56ED3007BC912 /* EoApplication.m in Sources */,
 				E2CFAE5212F5A46B007BC912 /* Reachability.m in Sources */,
+				E2CFAEEE12F5D569007BC912 /* _Account.m in Sources */,
+				E2CFAEEF12F5D569007BC912 /* Account.m in Sources */,
+				E2CFAEF012F5D569007BC912 /* Storage.xcdatamodeld in Sources */,
+				E2CFAEF312F5D5A2007BC912 /* DataConnector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +588,16 @@
 				E2C0B72312F38DD60050FB3F /* Storage.xcdatamodel */,
 			);
 			currentVersion = E2C0B72312F38DD60050FB3F /* Storage.xcdatamodel */;
+			path = Storage.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		E2CFAEEC12F5D569007BC912 /* Storage.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E2CFAEED12F5D569007BC912 /* Storage.xcdatamodel */,
+			);
+			currentVersion = E2CFAEED12F5D569007BC912 /* Storage.xcdatamodel */;
 			path = Storage.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

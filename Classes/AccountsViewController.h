@@ -11,7 +11,8 @@
 
 
 @interface AccountsViewController : UITableViewController <AccountEditorDelegate> {
-
+@private
+	NSArray* accounts;
 }
 
 @end

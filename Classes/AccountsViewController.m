@@ -11,6 +11,8 @@
 #import "AccountViewController.h"
 #import "AccountEditorDelegate.h"
 #import "AuthorizeViewController.h"
+#import "Account.h"
+#import "DataConnector.h"
 
 @interface AccountsViewController () 
 
@@ -36,6 +38,8 @@
 
 	self.navigationItem.title = @"Accounts";
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addButtonPressed)];
+
+	accounts = [[Account fetchAll:moc] retain];
 }
 
 -(void)addButtonPressed {
@@ -47,11 +51,14 @@
     [super viewWillAppear:animated];
 }
 */
-/*
+
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+
+	[accounts release];
+	accounts = [[Account fetchAll:moc] retain];
+	[self.tableView reloadData];
 }
-*/
 /*
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
@@ -82,7 +89,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 3;
+    return accounts.count;
 }
 
 
@@ -97,9 +104,10 @@
     }
     
     // Configure the cell...
+	Account* account = [accounts objectAtIndex:indexPath.row];
 	cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
-    cell.textLabel.text = @"Inferis";
-    cell.detailTextLabel.text = @"spam@inferis.org";
+    cell.textLabel.text = account.username;
+    cell.detailTextLabel.text = account.name;
     return cell;
 }
 
@@ -168,6 +176,7 @@
 - (void)viewDidUnload {
     // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
     // For example: self.myOutlet = nil;
+	[accounts release];
 }
 
 

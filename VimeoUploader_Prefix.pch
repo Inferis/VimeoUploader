@@ -22,3 +22,5 @@
 #endif
 
 #include "MPDebug.h"
+
+#define moc [DataConnector sharedInstance].managedObjectContext

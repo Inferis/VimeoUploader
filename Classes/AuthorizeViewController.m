@@ -11,6 +11,8 @@
 #import "MPOAuthAuthenticationMethodOAuth.h"
 #import "MPURLRequestParameter.h"
 #import "EoApplication.h"
+#import "Account.h"
+#import "DataConnector.h"
 #import <YAJLIOS/YAJLIOS.h>
 
 #define kConsumerKey @"ee2a775091bad1a55dfff24620353fff"
@@ -105,8 +107,15 @@
 		[alert show];
 		[alert release];
 	} else {
-		DLog(@"response:\n%@", response);
-		DLog(@"name = %@", [[response valueForKey:@"person"] valueForKey:@"display_name"]);
+		Account* account = [Account insertInManagedObjectContext:moc];
+		account.name = [[response valueForKey:@"person"] valueForKey:@"display_name"];
+		account.username = [[response valueForKey:@"person"] valueForKey:@"username"];
+		account.accessToken = oauth.credentials.accessToken;
+		account.accessTokenSecret = oauth.credentials.accessTokenSecret;
+		
+		NSError* error = nil;
+		[moc save:&error];
+		
 		[[self navigationController] popViewControllerAnimated:YES];
 	}
 }
@@ -126,7 +135,7 @@
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
-	[self.navigationController setNavigationBarHidden:YES animated:YES];
+	//[self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 
